@@ -10,6 +10,7 @@
 #              Hat.
 
 
+#Definition for building and setting scales
 def scale():
 
 	# Notes of intstrument
@@ -44,10 +45,7 @@ def scale():
     else:
         print("Please try again")
         scale()
-        
-# Each the leads each shoot of the bamboo plant
-# is conntected to
-shoots = [1, 4, 7, 9, 11]
+
 
 def play(midi_out, inst):
     
@@ -73,6 +71,9 @@ def play(midi_out, inst):
     MAX = 127
     # Touch Threshhold
     touch = [0,1,2,3,4]
+    # Each the leads each shoot of the bamboo plant
+    # is conntected to
+    shoots = [1, 4, 7, 9, 11]
     j=0
     for i in shoots:
         touch[j]= 90#0.75*mpr121[i].raw_value
